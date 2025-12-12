@@ -3,46 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srinivasa Commnuications - Meeseva Center</title>
+  <title>Srinivasa Communications - Meeseva & Online Services Center</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="header">
     <div class="container nav-container">
       <div class="logo">
-  <img src="logo.png" alt="Center Logo" class="logo-img" />
-  <span>Srinivasa Communications</span>
-</div>
+        <img src="logo.png" alt="Srinivasa Communications Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="brand-name">Srinivasa Communications</span>
+          <span class="brand-tagline">Meeseva & Online Services Center</span>
+        </div>
+      </div>
       <nav class="nav">
         <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#exams">Exams</a>
+        <a href="#services">Certificates</a>
+        <a href="#exams">Exam Forms</a>
         <a href="#cards">Cards & IDs</a>
+        <a href="#whyus">Why Choose Us</a>
         <a href="#contact">Contact</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
     </div>
   </header>
 
-    <main>
+  <main>
+    <!-- HERO -->
     <section id="home" class="hero">
+      <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <div>
-          <h1>Your One-Stop Service Center</h1>
-          <p>
-            All government and online services at one place – income, caste, residence, certificates, exam applications, ID cards, printing and more.
+        <div class="hero-text">
+          <p class="hero-badge">Warangal · Meeseva Center</p>
+          <h1>All Government & Online Services in One Place</h1>
+          <p class="hero-subtitle">
+            Certificates, exam applications, cards, printing and online services with fast, reliable support at Srinivasa Communications.
           </p>
-          <a href="#services" class="btn-primary">View All Services</a>
+          <div class="hero-actions">
+            <a href="#services" class="btn-primary">View All Services</a>
+            <a href="#contact" class="btn-outline">Call / WhatsApp: +91-9866025722</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Trusted local Meeseva Center</li>
+            <li>Guidance for all online applications</li>
+            <li>Same-day processing for most services</li>
+          </ul>
+        </div>
+        <div class="hero-image-wrapper">
+          <!-- Free stock image (replace URL with your own if needed) -->
+          <img
+            src="https://images.pexels.com/photos/1181536/pexels-photo-1181536.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Customer service at Srinivasa Communications"
+            class="hero-image"
+          />
         </div>
       </div>
     </section>
 
+    <!-- QUICK STATS / HIGHLIGHTS -->
+    <section class="section stats-section">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <span class="stat-number">10+</span>
+          <span class="stat-label">Years of Service</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">1000+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Services Available</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATE SERVICES -->
     <section id="services" class="section">
       <div class="container">
-        <h2 class="section-title">Certificate Services</h2>
+        <div class="section-header">
+          <h2 class="section-title">Certificate Services</h2>
+          <p class="section-subtitle">
+            Get all major certificates processed with proper guidance and documentation support.
+          </p>
+        </div>
         <div class="grid">
           <div class="card">
             <h3>Income Certificate</h3>
+            <p class="card-desc">Required for fees reimbursement, scholarships and government schemes.</p>
             <ul>
               <li>FSC Card</li>
               <li>Aadhaar</li>
@@ -52,6 +100,7 @@
 
           <div class="card">
             <h3>Caste Certificate</h3>
+            <p class="card-desc">SC / ST / BC / OBC caste certificates for education and employment.</p>
             <ul>
               <li>FSC Card</li>
               <li>Aadhaar</li>
@@ -62,6 +111,7 @@
 
           <div class="card">
             <h3>Residence Certificate</h3>
+            <p class="card-desc">Address proof for admissions, jobs and other official purposes.</p>
             <ul>
               <li>FSC Card</li>
               <li>Aadhaar</li>
@@ -71,6 +121,7 @@
 
           <div class="card">
             <h3>OBC Certificate</h3>
+            <p class="card-desc">For reservation benefits in education and government jobs.</p>
             <ul>
               <li>FSC Card</li>
               <li>Aadhaar</li>
@@ -83,6 +134,7 @@
 
           <div class="card">
             <h3>Birth Certificate</h3>
+            <p class="card-desc">New registration and corrections with complete documentation help.</p>
             <ul>
               <li>Father & Mother Aadhaar</li>
               <li>Hospital Discharge Card</li>
@@ -94,6 +146,7 @@
 
           <div class="card">
             <h3>Stamp Vendor Services</h3>
+            <p class="card-desc">Stamp papers and basic assistance for legal documentation.</p>
             <ul>
               <li>Stamp Papers</li>
               <li>Legal Documents Support</li>
@@ -103,9 +156,15 @@
       </div>
     </section>
 
+    <!-- EXAM APPLICATIONS -->
     <section id="exams" class="section alt">
       <div class="container">
-        <h2 class="section-title">Online Exam Applications</h2>
+        <div class="section-header">
+          <h2 class="section-title">Online Exam Applications</h2>
+          <p class="section-subtitle">
+            Complete support for entrance exams, government jobs and scholarship forms.
+          </p>
+        </div>
         <div class="grid small-grid">
           <div class="card">
             <h3>Engineering & Medical</h3>
@@ -142,9 +201,15 @@
       </div>
     </section>
 
+    <!-- CARDS & PRINTING -->
     <section id="cards" class="section">
       <div class="container">
-        <h2 class="section-title">Cards, IDs & Printing</h2>
+        <div class="section-header">
+          <h2 class="section-title">Cards, IDs & Printing</h2>
+          <p class="section-subtitle">
+            End-to-end support for government cards, PVC printing and document services.
+          </p>
+        </div>
         <div class="grid">
           <div class="card">
             <h3>Government Cards</h3>
@@ -181,21 +246,54 @@
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <!-- WHY CHOOSE US -->
+    <section id="whyus" class="section alt">
+      <div class="container whyus-container">
+        <div class="whyus-text">
+          <h2 class="section-title">Why Choose Srinivasa Communications?</h2>
+          <p class="section-subtitle">
+            Local, trusted and technology-enabled Meeseva Center dedicated to fast and accurate service.
+          </p>
+          <ul class="whyus-list">
+            <li>Personal guidance for every customer</li>
+            <li>Transparent process and documentation checklist</li>
+            <li>Support over phone and WhatsApp</li>
+            <li>Professional printing and scanning setup</li>
+          </ul>
+        </div>
+        <div class="whyus-image-wrapper">
+          <!-- Free stock image (replace URL with your own if needed) -->
+          <img
+            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Team assisting customers"
+            class="whyus-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
       <div class="container contact-container">
         <div>
           <h2 class="section-title">Contact & Location</h2>
-          <p>
-            Visit our center for any government, certificate or online application services.  
-            You can also call or WhatsApp for details.
+          <p class="section-subtitle">
+            Visit the center or contact via phone / WhatsApp for any government, certificate or online service.
           </p>
           <ul class="contact-list">
             <li><strong>Phone:</strong> +91-9866025722</li>
             <li><strong>WhatsApp:</strong> +91-9866025722</li>
             <li><strong>Email:</strong> srimeeseva99@gmail.com</li>
-            <li><strong>Address:</strong> H no - 16-8-197,Abbanikunta, Warangal.</li>
+            <li><strong>Address:</strong> H No - 16-8-197, Abbanikunta, Warangal.</li>
+            <li><strong>Timings:</strong> 9:00 AM – 8:00 PM (All Days)</li>
           </ul>
+
+          <!-- Embedded map placeholder (you can replace src with your own Google Maps embed) -->
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.1217725507627!2d79.61720003104764!3d17.972055166464962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3344c5a390aa7f%3A0x843b426ae597a16f!2sSRINIVASA%20COMMUNICATIONS!5e0!3m2!1sen!2sca!4v1765560764090!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
+
         <form class="contact-form">
           <h3>Send a Message</h3>
           <input type="text" placeholder="Your Name" required />
@@ -203,7 +301,9 @@
           <input type="email" placeholder="Email (optional)" />
           <textarea rows="4" placeholder="Your message / service required" required></textarea>
           <button type="submit" class="btn-primary">Submit</button>
-          <p class="form-note">This is a demo form. Connect with your email service to receive messages.</p>
+          <p class="form-note">
+            This is a demo form. Connect it to your email / WhatsApp API to receive messages.
+          </p>
         </form>
       </div>
     </section>
@@ -211,7 +311,9 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; <span id="year"></span> Meeseva & Online Services Center. All Rights Reserved.</p>
+      <p>
+        &copy; <span id="year"></span> Srinivasa Communications · Meeseva & Online Services Center · All Rights Reserved.
+      </p>
     </div>
   </footer>
 
