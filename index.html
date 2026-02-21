@@ -3,319 +3,696 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srinivasa Communications - Meeseva & Online Services Center</title>
+  <title>Srinivasa Communications – Meeseva & Online Services | Warangal</title>
+  <meta name="description" content="Trusted Meeseva center in Warangal. Certificates, exam applications, Aadhaar, PAN, PVC printing and all government online services with expert guidance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
     <div class="container nav-container">
-      <div class="logo">
+      <a href="#home" class="logo">
         <img src="logo.png" alt="Srinivasa Communications Logo" class="logo-img" />
         <div class="logo-text">
           <span class="brand-name">Srinivasa Communications</span>
-          <span class="brand-tagline">Meeseva & Online Services Center</span>
+          <span class="brand-tagline">Meeseva &amp; Online Services</span>
         </div>
-      </div>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#services">Certificates</a>
-        <a href="#exams">Exam Forms</a>
-        <a href="#cards">Cards & IDs</a>
-        <a href="#whyus">Why Choose Us</a>
-        <a href="#contact">Contact</a>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#process" class="nav-link">How It Works</a>
+        <a href="#whyus" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/919866025722" target="_blank" rel="noopener" class="nav-cta">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
   <main>
+
     <!-- HERO -->
     <section id="home" class="hero">
-      <div class="hero-overlay"></div>
+      <div class="hero-bg">
+        <div class="hero-shape s1"></div>
+        <div class="hero-shape s2"></div>
+        <div class="hero-shape s3"></div>
+        <div class="hero-grid"></div>
+      </div>
+
       <div class="container hero-content">
         <div class="hero-text">
-          <p class="hero-badge">Warangal · Meeseva Center</p>
-          <h1>All Government & Online Services in One Place</h1>
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Warangal &middot; Abbanikunta &middot; Meeseva Center
+          </div>
+          <h1 class="hero-title">
+            Your Trusted Gateway to
+            <span class="gradient-text"> Government Services</span>
+          </h1>
           <p class="hero-subtitle">
-            Certificates, exam applications, cards, printing and online services with fast, reliable support at Srinivasa Communications.
+            Certificates, exam applications, Aadhaar, PAN, printing and all government online services — handled with speed, care, and local expertise.
           </p>
           <div class="hero-actions">
-            <a href="#services" class="btn-primary">View All Services</a>
-            <a href="#contact" class="btn-outline">Call / WhatsApp: +91-9866025722</a>
+            <a href="#services" class="btn-primary">
+              Explore Services
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/919866025722" target="_blank" rel="noopener" class="btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat on WhatsApp
+            </a>
           </div>
-          <ul class="hero-highlights">
-            <li>Trusted local Meeseva Center</li>
-            <li>Guidance for all online applications</li>
-            <li>Same-day processing for most services</li>
-          </ul>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Same-day processing
+            </div>
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Expert guidance
+            </div>
+            <div class="trust-item">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Open 7 days a week
+            </div>
+          </div>
         </div>
-        <div class="hero-image-wrapper">
-          <!-- Free stock image (replace URL with your own if needed) -->
-          <img
-            src="https://images.pexels.com/photos/1181536/pexels-photo-1181536.jpeg?auto=compress&cs=tinysrgb&w=900"
-            alt="Customer service at Srinivasa Communications"
-            class="hero-image"
-          />
+
+        <div class="hero-visual">
+          <div class="hero-card-stack">
+            <div class="floating-card fc1">
+              <div class="fc-icon">📋</div>
+              <div class="fc-info">
+                <strong>Income Certificate</strong>
+                <span>Ready in minutes</span>
+              </div>
+            </div>
+            <div class="floating-card fc2">
+              <div class="fc-icon">🪪</div>
+              <div class="fc-info">
+                <strong>Aadhaar Services</strong>
+                <span>Update &amp; corrections</span>
+              </div>
+            </div>
+            <div class="floating-card fc3">
+              <div class="fc-icon">📝</div>
+              <div class="fc-info">
+                <strong>Exam Applications</strong>
+                <span>EAMCET, NEET, JEE</span>
+              </div>
+            </div>
+            <div class="hero-main-card">
+              <img
+                src="https://images.pexels.com/photos/1181536/pexels-photo-1181536.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Professional service at Srinivasa Communications"
+              />
+              <div class="hero-card-badge">
+                <span class="pulse-dot"></span>
+                Open Now &middot; 9AM–9PM
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
       </div>
     </section>
 
-    <!-- QUICK STATS / HIGHLIGHTS -->
-    <section class="section stats-section">
+    <!-- STATS -->
+    <section class="stats-section">
       <div class="container stats-grid">
-        <div class="stat-card">
-          <span class="stat-number">10+</span>
+        <div class="stat-item">
+          <div class="stat-val"><span class="stat-num" data-target="10">0</span><span class="stat-suffix">+</span></div>
           <span class="stat-label">Years of Service</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-number">1000+</span>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <div class="stat-val"><span class="stat-num" data-target="1000">0</span><span class="stat-suffix">+</span></div>
           <span class="stat-label">Happy Customers</span>
         </div>
-        <div class="stat-card">
-          <span class="stat-number">50+</span>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <div class="stat-val"><span class="stat-num" data-target="50">0</span><span class="stat-suffix">+</span></div>
           <span class="stat-label">Services Available</span>
         </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATE SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Certificate Services</h2>
-          <p class="section-subtitle">
-            Get all major certificates processed with proper guidance and documentation support.
-          </p>
-        </div>
-        <div class="grid">
-          <div class="card">
-            <h3>Income Certificate</h3>
-            <p class="card-desc">Required for fees reimbursement, scholarships and government schemes.</p>
-            <ul>
-              <li>FSC Card</li>
-              <li>Aadhaar</li>
-              <li>Photo</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Caste Certificate</h3>
-            <p class="card-desc">SC / ST / BC / OBC caste certificates for education and employment.</p>
-            <ul>
-              <li>FSC Card</li>
-              <li>Aadhaar</li>
-              <li>Old Caste Certificate</li>
-              <li>Photo</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Residence Certificate</h3>
-            <p class="card-desc">Address proof for admissions, jobs and other official purposes.</p>
-            <ul>
-              <li>FSC Card</li>
-              <li>Aadhaar</li>
-              <li>Photo</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>OBC Certificate</h3>
-            <p class="card-desc">For reservation benefits in education and government jobs.</p>
-            <ul>
-              <li>FSC Card</li>
-              <li>Aadhaar</li>
-              <li>Photo</li>
-              <li>SSC Memo</li>
-              <li>Old Caste Certificate</li>
-              <li>Old Income Certificate</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Birth Certificate</h3>
-            <p class="card-desc">New registration and corrections with complete documentation help.</p>
-            <ul>
-              <li>Father & Mother Aadhaar</li>
-              <li>Hospital Discharge Card</li>
-              <li>Death Certificate (if applicable)</li>
-              <li>Aadhaar</li>
-              <li>Hospital Summary</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Stamp Vendor Services</h3>
-            <p class="card-desc">Stamp papers and basic assistance for legal documentation.</p>
-            <ul>
-              <li>Stamp Papers</li>
-              <li>Legal Documents Support</li>
-            </ul>
-          </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <div class="stat-val"><span class="stat-num" data-target="7">0</span><span class="stat-suffix"></span></div>
+          <span class="stat-label">Days a Week</span>
         </div>
       </div>
     </section>
 
-    <!-- EXAM APPLICATIONS -->
-    <section id="exams" class="section alt">
+    <!-- SERVICES -->
+    <section id="services" class="section services-section">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Online Exam Applications</h2>
-          <p class="section-subtitle">
-            Complete support for entrance exams, government jobs and scholarship forms.
-          </p>
+        <div class="section-header reveal">
+          <span class="section-badge">What We Do</span>
+          <h2 class="section-title">All Services Under One Roof</h2>
+          <p class="section-subtitle">From government certificates to exam registrations — we handle it all with precision and care.</p>
         </div>
-        <div class="grid small-grid">
-          <div class="card">
-            <h3>Engineering & Medical</h3>
-            <ul>
-              <li>EAMCET</li>
-              <li>NEET</li>
-              <li>JEE Main</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Entrance Exams</h3>
-            <ul>
-              <li>ICET</li>
-              <li>ECET</li>
-              <li>POLYCET</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Government & Jobs</h3>
-            <ul>
-              <li>RRB</li>
-              <li>SSC</li>
-              <li>Other Online Applications</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Scholarships</h3>
-            <ul>
-              <li>All Online Scholarship Forms</li>
-              <li>College Application Support</li>
-            </ul>
-          </div>
+
+        <div class="service-tabs reveal">
+          <button class="tab-btn active" data-tab="certificates">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            Certificates
+          </button>
+          <button class="tab-btn" data-tab="exams">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            Exam Forms
+          </button>
+          <button class="tab-btn" data-tab="cards">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            Cards &amp; IDs
+          </button>
+          <button class="tab-btn" data-tab="printing">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Printing
+          </button>
         </div>
+
+        <div id="tabContent">
+
+          <!-- Certificates -->
+          <div class="tab-pane active" data-pane="certificates">
+            <div class="service-grid">
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dbeafe;--ic2:#1d4ed8">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <h3>Income Certificate</h3>
+                <p>Required for fees reimbursement, scholarships and government schemes.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">FSC Card</span>
+                  <span class="doc-tag">Aadhaar</span>
+                  <span class="doc-tag">Photo</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fef3c7;--ic2:#d97706">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Caste Certificate</h3>
+                <p>SC / ST / BC / OBC certificates for education and employment benefits.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">FSC Card</span>
+                  <span class="doc-tag">Aadhaar</span>
+                  <span class="doc-tag">Old Certificate</span>
+                  <span class="doc-tag">Photo</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dcfce7;--ic2:#16a34a">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Residence Certificate</h3>
+                <p>Official address proof for admissions, jobs and government purposes.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">FSC Card</span>
+                  <span class="doc-tag">Aadhaar</span>
+                  <span class="doc-tag">Photo</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#ede9fe;--ic2:#7c3aed">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <h3>OBC Certificate</h3>
+                <p>For reservation benefits in education and government jobs.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">FSC Card</span>
+                  <span class="doc-tag">Aadhaar</span>
+                  <span class="doc-tag">SSC Memo</span>
+                  <span class="doc-tag">Old Caste &amp; Income</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fee2e2;--ic2:#dc2626">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                </div>
+                <h3>Birth Certificate</h3>
+                <p>New registration and corrections with complete documentation support.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">Parents Aadhaar</span>
+                  <span class="doc-tag">Hospital Card</span>
+                  <span class="doc-tag">Hospital Summary</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#f0fdf4;--ic2:#059669">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Stamp Vendor Services</h3>
+                <p>Stamp papers and assistance for legal documentation needs.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">Stamp Papers</span>
+                  <span class="doc-tag">Legal Support</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exam Forms -->
+          <div class="tab-pane" data-pane="exams">
+            <div class="service-grid">
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dbeafe;--ic2:#1d4ed8">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                </div>
+                <h3>Engineering &amp; Medical</h3>
+                <p>Complete form-filling support for engineering and medical entrance exams.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">EAMCET</span>
+                  <span class="doc-tag">NEET</span>
+                  <span class="doc-tag">JEE Main</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fef3c7;--ic2:#d97706">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </div>
+                <h3>Entrance Exams</h3>
+                <p>Registration support for polytechnic and professional course entrance exams.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">ICET</span>
+                  <span class="doc-tag">ECET</span>
+                  <span class="doc-tag">POLYCET</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dcfce7;--ic2:#16a34a">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                </div>
+                <h3>Government &amp; Jobs</h3>
+                <p>All government job application forms with expert assistance.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">RRB</span>
+                  <span class="doc-tag">SSC</span>
+                  <span class="doc-tag">Other Govt. Jobs</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#ede9fe;--ic2:#7c3aed">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <h3>Scholarships</h3>
+                <p>Complete support for scholarship forms and college applications online.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">All Scholarships</span>
+                  <span class="doc-tag">College Applications</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards & IDs -->
+          <div class="tab-pane" data-pane="cards">
+            <div class="service-grid">
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dbeafe;--ic2:#1d4ed8">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <h3>Aadhaar Services</h3>
+                <p>New enrollment, updates, corrections and download of Aadhaar card.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">New Aadhaar</span>
+                  <span class="doc-tag">Update</span>
+                  <span class="doc-tag">Corrections</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fef3c7;--ic2:#d97706">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <h3>Voter ID</h3>
+                <p>New voter ID registration and correction services for Warangal residents.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">New Registration</span>
+                  <span class="doc-tag">Corrections</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dcfce7;--ic2:#16a34a">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Ration Card</h3>
+                <p>New ration card, member additions and corrections for Warangal families.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">New Card</span>
+                  <span class="doc-tag">Member Addition</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#ede9fe;--ic2:#7c3aed">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><line x1="14" y1="10" x2="18" y2="10"/><line x1="14" y1="14" x2="18" y2="14"/></svg>
+                </div>
+                <h3>PAN Card</h3>
+                <p>New PAN card application and corrections through the authorized portal.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">New PAN</span>
+                  <span class="doc-tag">Corrections</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fee2e2;--ic2:#dc2626">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                </div>
+                <h3>ABHA / Health Card</h3>
+                <p>Ayushman Bharat Health Account card registration and support.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">ABHA Registration</span>
+                  <span class="doc-tag">Download</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#f0fdf4;--ic2:#059669">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M7 15h2M11 15h6"/></svg>
+                </div>
+                <h3>RC, DL &amp; eShram</h3>
+                <p>Vehicle RC, Driving License and eShram card services for workers.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">RC Card</span>
+                  <span class="doc-tag">Driving License</span>
+                  <span class="doc-tag">eShram</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Printing -->
+          <div class="tab-pane" data-pane="printing">
+            <div class="service-grid">
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dbeafe;--ic2:#1d4ed8">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+                </div>
+                <h3>PVC Card Printing</h3>
+                <p>Professional PVC card printing for any ID, business card or event card.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">ID Cards</span>
+                  <span class="doc-tag">Business Cards</span>
+                  <span class="doc-tag">Custom PVC</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#fef3c7;--ic2:#d97706">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+                </div>
+                <h3>Colour Printing</h3>
+                <p>High-quality colour printing for documents, photos and forms.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">Documents</span>
+                  <span class="doc-tag">Photos</span>
+                  <span class="doc-tag">Forms</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#dcfce7;--ic2:#16a34a">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                </div>
+                <h3>Scan &amp; Email</h3>
+                <p>Document scanning and email delivery for official submissions.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">Scan</span>
+                  <span class="doc-tag">Email Delivery</span>
+                  <span class="doc-tag">PDF Conversion</span>
+                </div>
+              </div>
+
+              <div class="service-card reveal">
+                <div class="sc-icon" style="--ic:#ede9fe;--ic2:#7c3aed">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+                </div>
+                <h3>Photocopy &amp; B/W Print</h3>
+                <p>Fast and affordable black-and-white printing and photocopying services.</p>
+                <div class="sc-docs">
+                  <span class="doc-tag">Photocopy</span>
+                  <span class="doc-tag">B&amp;W Print</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /tabContent -->
       </div>
     </section>
 
-    <!-- CARDS & PRINTING -->
-    <section id="cards" class="section">
+    <!-- HOW IT WORKS -->
+    <section id="process" class="section process-section">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Cards, IDs & Printing</h2>
-          <p class="section-subtitle">
-            End-to-end support for government cards, PVC printing and document services.
-          </p>
+        <div class="section-header reveal" style="text-align:center">
+          <span class="section-badge">Simple Process</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle" style="margin:0 auto">Getting your certificates and services done is easier than you think.</p>
         </div>
-        <div class="grid">
-          <div class="card">
-            <h3>Government Cards</h3>
-            <ul>
-              <li>Aadhaar Services</li>
-              <li>Voter ID</li>
-              <li>Ration Card</li>
-              <li>ABHA Card</li>
-              <li>PAN Card</li>
-              <li>RC Card</li>
-              <li>Driving License</li>
-              <li>EShram Card</li>
-            </ul>
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="step-num" aria-hidden="true">01</div>
+            <div class="step-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.1 19.79 19.79 0 01.1 2.38 2 2 0 012.07.34h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.24a16 16 0 006.29 6.29l1.08-1.08a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <h3>Contact Us</h3>
+            <p>Call or WhatsApp us to enquire about your service. We'll guide you on the exact documents required.</p>
           </div>
-
-          <div class="card">
-            <h3>PVC & Printing</h3>
-            <ul>
-              <li>PVC Card Printing</li>
-              <li>Colour Print (Documents & Photos)</li>
-              <li>Photocopy, Scan & Email</li>
-            </ul>
+          <div class="process-connector" aria-hidden="true"></div>
+          <div class="process-step reveal">
+            <div class="step-num" aria-hidden="true">02</div>
+            <div class="step-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Bring Documents</h3>
+            <p>Visit our center with your documents. We verify and prepare your application accurately on the spot.</p>
           </div>
-
-          <div class="card">
-            <h3>Other Online Services</h3>
-            <ul>
-              <li>All Online Applications</li>
-              <li>Form Filling Support</li>
-              <li>Document Upload & Download</li>
-            </ul>
+          <div class="process-connector" aria-hidden="true"></div>
+          <div class="process-step reveal">
+            <div class="step-num" aria-hidden="true">03</div>
+            <div class="step-icon">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Get It Done</h3>
+            <p>We process your application and ensure you receive your certificate or service, same day whenever possible.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- WHY CHOOSE US -->
-    <section id="whyus" class="section alt">
-      <div class="container whyus-container">
-        <div class="whyus-text">
-          <h2 class="section-title">Why Choose Srinivasa Communications?</h2>
-          <p class="section-subtitle">
-            Local, trusted and technology-enabled Meeseva Center dedicated to fast and accurate service.
-          </p>
-          <ul class="whyus-list">
-            <li>Personal guidance for every customer</li>
-            <li>Transparent process and documentation checklist</li>
-            <li>Support over phone and WhatsApp</li>
-            <li>Professional printing and scanning setup</li>
-          </ul>
-        </div>
-        <div class="whyus-image-wrapper">
-          <!-- Free stock image (replace URL with your own if needed) -->
-          <img
-            src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=900"
-            alt="Team assisting customers"
-            class="whyus-image"
-          />
+    <section id="whyus" class="section whyus-section">
+      <div class="container">
+        <div class="whyus-inner">
+          <div class="whyus-text reveal">
+            <span class="section-badge">Why Us</span>
+            <h2 class="section-title">Your Trusted Partner for Government Services</h2>
+            <p class="section-subtitle">We're not just a service center — we're your neighbors committed to making government services accessible to everyone.</p>
+            <div class="whyus-features">
+              <div class="feature-item">
+                <div class="feature-icon" style="--fc:#dbeafe;--fc2:#1d4ed8">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                </div>
+                <div>
+                  <h4>Personal Guidance</h4>
+                  <p>Every customer receives one-on-one guidance tailored to their specific need.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" style="--fc:#dcfce7;--fc2:#16a34a">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h4>Same-Day Processing</h4>
+                  <p>Most services are completed on the same day — no long waits or multiple visits.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" style="--fc:#fef3c7;--fc2:#d97706">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h4>Transparent &amp; Trustworthy</h4>
+                  <p>Clear documentation checklists and transparent pricing — no hidden charges.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon" style="--fc:#ede9fe;--fc2:#7c3aed">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.1 19.79 19.79 0 01.1 2.38 2 2 0 012.07.34h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.24a16 16 0 006.29 6.29l1.08-1.08a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <h4>Phone &amp; WhatsApp Support</h4>
+                  <p>Reach us on call or WhatsApp for quick guidance before visiting the center.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="whyus-visual reveal">
+            <div class="whyus-image-wrap">
+              <img
+                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=700"
+                alt="Professional team helping customers at Srinivasa Communications"
+              />
+              <div class="whyus-badge">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Trusted since 10+ years</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section contact-section">
-      <div class="container contact-container">
-        <div>
-          <h2 class="section-title">Contact & Location</h2>
-          <p class="section-subtitle">
-            Visit the center or contact via phone / WhatsApp for any government, certificate or online service.
-          </p>
-          <ul class="contact-list">
-            <li><strong>Phone:</strong> +91-9866025722</li>
-            <li><strong>WhatsApp:</strong> +91-9866025722</li>
-            <li><strong>Email:</strong> srimeeseva99@gmail.com</li>
-            <li><strong>Address:</strong> H No - 16-8-197, Abbanikunta, Warangal.</li>
-            <li><strong>Timings:</strong> 9:00 AM – 9:00 PM (Mon - Sat) & 9:00 AM - 2:00pm (Sun)</li>
-          </ul>
-
-          <!-- Embedded map placeholder (you can replace src with your own Google Maps embed) -->
-          <div class="map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.1217725507627!2d79.61720003104764!3d17.972055166464962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3344c5a390aa7f%3A0x843b426ae597a16f!2sSRINIVASA%20COMMUNICATIONS!5e0!3m2!1sen!2sca!4v1765560764090!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container">
+        <div class="section-header reveal" style="text-align:center">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">Visit Us or Contact</h2>
+          <p class="section-subtitle" style="margin:0 auto">We're here to help — walk in or reach out via phone or WhatsApp.</p>
+        </div>
+        <div class="contact-inner">
+          <div class="contact-info reveal">
+            <div class="info-card">
+              <div class="info-icon" style="--ic:#dbeafe;--ic2:#1d4ed8">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.1 11.1 19.79 19.79 0 01.1 2.38 2 2 0 012.07.34h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.24a16 16 0 006.29 6.29l1.08-1.08a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Phone &amp; WhatsApp</h4>
+                <a href="tel:+919866025722">+91-9866025722</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" style="--ic:#dcfce7;--ic2:#16a34a">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:srimeeseva99@gmail.com">srimeeseva99@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" style="--ic:#fef3c7;--ic2:#d97706">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>H No - 16-8-197, Abbanikunta, Warangal</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon" style="--ic:#ede9fe;--ic2:#7c3aed">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon–Sat: 9:00 AM – 9:00 PM</p>
+                <p>Sunday: 9:00 AM – 2:00 PM</p>
+              </div>
+            </div>
+            <a href="https://wa.me/919866025722" target="_blank" rel="noopener" class="whatsapp-cta-btn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Message on WhatsApp
+            </a>
+          </div>
+          <div class="contact-map reveal">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3848.1217725507627!2d79.61720003104764!3d17.972055166464962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3344c5a390aa7f%3A0x843b426ae597a16f!2sSRINIVASA%20COMMUNICATIONS!5e0!3m2!1sen!2sca!4v1765560764090!5m2!1sen!2sca"
+                title="Srinivasa Communications location on Google Maps"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
           </div>
         </div>
-
-        <form class="contact-form">
-          <h3>Send a Message</h3>
-          <input type="text" placeholder="Your Name" required />
-          <input type="tel" placeholder="Mobile Number" required />
-          <input type="email" placeholder="Email (optional)" />
-          <textarea rows="4" placeholder="Your message / service required" required></textarea>
-          <button type="submit" class="btn-primary">Submit</button>
-          <p class="form-note">
-            This is a demo form. Connect it to your email / WhatsApp API to receive messages.
-          </p>
-        </form>
       </div>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>
-        &copy; <span id="year"></span> Srinivasa Communications · Meeseva & Online Services Center · All Rights Reserved.
-      </p>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <img src="logo.png" alt="Srinivasa Communications" class="logo-img footer-logo" />
+          <div class="logo-text">
+            <span class="brand-name" style="color:#f1f5f9">Srinivasa Communications</span>
+            <span class="brand-tagline" style="color:#64748b">Meeseva &amp; Online Services Center</span>
+          </div>
+        </div>
+        <p class="footer-desc">Your trusted government services partner in Warangal, helping citizens navigate official processes with ease for over a decade.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Certificates</a></li>
+          <li><a href="#services">Exam Applications</a></li>
+          <li><a href="#services">Cards &amp; IDs</a></li>
+          <li><a href="#services">Printing Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919866025722">+91-9866025722</a></li>
+          <li><a href="mailto:srimeeseva99@gmail.com">srimeeseva99@gmail.com</a></li>
+          <li>H No - 16-8-197, Abbanikunta, Warangal</li>
+          <li>Mon–Sat: 9AM–9PM &nbsp;|&nbsp; Sun: 9AM–2PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Srinivasa Communications &middot; All Rights Reserved &middot; Warangal, Telangana</p>
+      </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919866025722" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
